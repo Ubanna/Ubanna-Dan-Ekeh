@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #000;
+    background: #fff;
+}
+
+.App {
+    max-width: 728px;
+    margin: 4rem auto;
+}
+
+.App > h1 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.Card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d3d3d3;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #333333;
+}
+
+.Card--text h1 {
+    color: #000;
+}
+
+.Card--button button {
+    background: #f5f6f7;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.Card--button__delete {
+    border: 1px solid #ca0000;
+    color: #ca0000;
+}
+
+.Card--button__event {
+    border: 1px solid #1E90FF;
+    color: #1E90FF;
+    margin-right: 1rem;
+}
+
+.Card--button__done {
+    border: 1px solid #00aa69;
+    color: #00aa69;
+    margin-right: 1rem;
+}
+
+.Form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #d3d3d3;
+    margin-bottom: 1rem;
+}
+
+.Form > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form input {
+    background: #f5f6f7;
+    padding: 0.5rem 1rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: block;
+    margin: 0.3rem 1rem 0 0;
+}
+
+.Form button {
+    background: #000;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: #777 !important;
+}
+
+.hide-button {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .Card {
+        flex-direction: column;
+        padding: 1.4rem 1rem;
+        justify-content: space-between;
+    }
+    .Card--button button {
+        margin-top: 1rem;
+    }
+    .Form {
+        flex-direction: column;
+    }
+    .Form input {
+        padding: 0.5rem 1rem;
+        margin: 0.3rem 1rem 0 0;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .Card {
+        flex-direction: column;
+        padding: 1.4rem 1rem;
+        justify-content: space-between;
+    }
+    .Card--button button {
+        margin-top: 1rem;
+    }
+    .Form {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    .Form button {
+        padding: 0.4rem 0.6rem;
+        margin-top: 15px;
+    }
+    .Form input {
+        padding: 0.3rem 0.1rem;
+        width: 50px;
+        /* margin: 0.1rem 0.2rem 0 0; */
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .Form {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    .Form input {
+        padding: 0.3rem 0.1rem;
+        width: 125px;
+        /* margin: 0.1rem 0.2rem 0 0; */
+    }
+  }
